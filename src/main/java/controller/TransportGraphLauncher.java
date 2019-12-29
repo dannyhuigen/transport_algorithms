@@ -134,6 +134,7 @@ public class TransportGraphLauncher {
         System.out.println("Total verticies visited dijkstra's: " + totalDijkstraTVF);
         System.out.println("Total verticies visited A*: " + totalAStarTVF);
         System.out.println(String.format("%s%.2f%s", "Percentage of nodes A* visited compared to dijkstra's: " , (((double)totalAStarTVF / (double) totalDijkstraTVF) * 100) , "%"));
+        System.out.println(String.format("%s%.2f%s", "This means A* is on average " , (100 - (((double)totalAStarTVF / (double) totalDijkstraTVF) * 100)) , "% faster than dijkstra's on the tested graph"));
 
     }
 }
